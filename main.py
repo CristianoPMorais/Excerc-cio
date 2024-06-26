@@ -37,12 +37,12 @@ while sair != 0:
     try:
         sair = int(input("digite '0' para sair ou '1' inserir outro filme: "))
         if sair == 1:
-            print("Ok")
+            print("Ok \n")
         elif sair == 0:
-            print("Segue abaixo os filmes avaliados com suas respectivas notas:")
+            print("Segue abaixo os filmes avaliados com suas respectivas notas: \n")
             print(ordem_filmes)
-            print("O filme melhor avaliado na sequencia foi o filme abaixo!")
+            print("O filme melhor avaliado na sequencia foi o filme abaixo! \n")
             print([max(ordem_filmes, key=ordem_filmes.get)])
     except:
-        print("Vou entender que queria digitar '1'")
+        print("Vou entender que queria digitar '1' \n")
 
