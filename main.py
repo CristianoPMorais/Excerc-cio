@@ -39,11 +39,10 @@ while sair != 0:
         if sair == 1:
             print("Ok")
         elif sair == 0:
-            print("Segue abaixo os dados solicitados")
-
+            print("Segue abaixo os filmes avaliados com suas respectivas notas:")
+            print(ordem_filmes)
+            print("O filme melhor avaliado na sequencia foi o filme abaixo!")
+            print([max(ordem_filmes, key=ordem_filmes.get)])
     except:
         print("Vou entender que queria digitar '1'")
 
-print(ordem_filmes)
-print("O filme melhor avaliado na sequencia foi o filme abaixo!")
-print([max(ordem_filmes, key=ordem_filmes.get)])
